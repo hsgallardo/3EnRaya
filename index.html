@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego 3 en Raya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Juego 3 en Raya</h1>
+        
+        <!-- Menú de opciones de juego -->
+        <div class="game-options">
+            <button id="two-players">Jugar 2 Jugadores</button>
+            <button id="vs-machine">Jugar contra la Máquina</button>
+        </div>
+
+        <!-- Tablero de juego -->
+        <div class="board" style="display: none;">
+            <div class="cell" id="cell-0"></div>
+            <div class="cell" id="cell-1"></div>
+            <div class="cell" id="cell-2"></div>
+            <div class="cell" id="cell-3"></div>
+            <div class="cell" id="cell-4"></div>
+            <div class="cell" id="cell-5"></div>
+            <div class="cell" id="cell-6"></div>
+            <div class="cell" id="cell-7"></div>
+            <div class="cell" id="cell-8"></div>
+        </div>
+
+        <!-- Botón de reiniciar juego y otros botones -->
+        <div class="game-controls" style="display: none;">
+            <button id="reset">Reiniciar Juego</button>
+            <button id="back-to-menu">Volver al Menú</button>
+            <button id="end-game">Terminar Juego</button>
+        </div>
+
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

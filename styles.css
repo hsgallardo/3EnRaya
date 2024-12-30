@@ -1,0 +1,110 @@
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Alinea los elementos en columna (botones y tablero) */
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #00796b;
+}
+
+/* Botones de selección de modo */
+.game-options {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+/* Estilo del tablero */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px; /* Asegura que el tablero tenga un pequeño espacio superior */
+    justify-self: center; /* Centra el tablero dentro del contenedor */
+}
+
+/* Estilo de las celdas */
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fafafa;
+    border: 2px solid #00796b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #80cbc4;
+}
+
+/* Botones de control del juego */
+.game-controls {
+    display: grid; 
+    grid-template-columns: 1fr; /* Una columna */
+    gap: 15px; /* Espacio entre los botones */
+    justify-items: center; /* Centra los botones en la columna */
+    margin-top: 20px;
+    width: 100%; /* Asegura que el contenedor ocupe todo el espacio disponible */
+}
+
+.game-controls button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 250px; /* Asegura que todos los botones tengan el mismo ancho */
+    max-width: 100%; /* Para no estirarlos demasiado */
+}
+
+.game-controls button:hover {
+    background-color: #b71c1c;
+}
+
+/* Mensajes de victoria o empate */
+#message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00796b;
+    margin-top: 20px;
+}
